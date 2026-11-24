@@ -85,3 +85,31 @@
     document.body.removeChild(ta);
   }
 })();
+
+/* Theme toggle — dark is the default, light via data-theme="light".
+   The saved choice lives in localStorage ("jn-theme"); a tiny inline
+   script in <head> applies it before CSS loads to avoid a flash. */
+(function () {
+  "use strict";
+  var btn = document.getElementById("themeToggle");
+  if (!btn) return;
+  function apply(theme) {
+    if (theme === "light") {
+      document.documentElement.setAttribute("data-theme", "light");
+      btn.setAttribute("aria-label", "Switch to dark theme");
+      btn.setAttribute("title", "Switch to dark theme");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+      btn.setAttribute("aria-label", "Switch to light theme");
+      btn.setAttribute("title", "Switch to light theme");
+    }
+  }
+  var saved = null;
+  try { saved = localStorage.getItem("jn-theme"); } catch (e) { saved = null; }
+  apply(saved === "light" ? "light" : "dark");
+  btn.addEventListener("click", function () {
+    var next = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+    try { localStorage.setItem("jn-theme", next); } catch (e) { /* ignore */ }
+    apply(next);
+  });
+})();

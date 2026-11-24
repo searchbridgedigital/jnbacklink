@@ -3,8 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smart Link Converter — JN Backlink</title>
-<meta name="description" content="Turn plain URLs in text into clickable HTML or Markdown links.">
+<script>(function(){try{if(localStorage.getItem('jn-theme')==='light'){document.documentElement.setAttribute('data-theme','light');}}catch(e){}})();</script>
+<title>Smart Link Converter — Free Backlink Tool | JN Backlink</title>
+<meta name="description" content="Free Smart Link Converter — turn plain URLs in text into clickable HTML or Markdown links. No sign-up, runs in your browser.">
+<link rel="canonical" href="https://jnbacklink.com/tools/smart-link-converter.html">
+<meta property="og:title" content="Smart Link Converter — Free Backlink Tool | JN Backlink">
+<meta property="og:description" content="Free Smart Link Converter — turn plain URLs in text into clickable HTML or Markdown links. No sign-up, runs in your browser.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jnbacklink.com/tools/smart-link-converter.html">
+<meta property="og:image" content="https://jnbacklink.com/assets/img/favicon.png">
+<meta property="og:site_name" content="JN Backlink">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Smart Link Converter — Free Backlink Tool | JN Backlink">
+<meta name="twitter:description" content="Free Smart Link Converter — turn plain URLs in text into clickable HTML or Markdown links. No sign-up, runs in your browser.">
 <link rel="icon" type="image/png" href="../favicon.png">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3C2K20FCF"></script>
 <script>
@@ -14,14 +25,56 @@
   gtag('config', 'G-G3C2K20FCF');
 </script>
 <link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Smart Link Converter",
+      "description": "Turn plain URLs in text into clickable HTML or Markdown links.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://jnbacklink.com/tools/smart-link-converter.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jnbacklink.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://jnbacklink.com/tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Smart Link Converter"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="../">
-      <span class="brand-badge">JN</span>
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z" fill="#0B1220"/></svg></span>
       <span class="brand-text">
-        <span class="brand-name">JN <span>Backlink</span></span><br>
+        <span class="brand-name">JN <span class="grad-text">BACKLINK</span></span><br>
         <span class="brand-tag">SEO &amp; Digital Marketing</span>
       </span>
     </a>
@@ -30,17 +83,24 @@
       <ul>
         <li><a href="../">Home</a></li>
         <li><a href="../services/">Services</a></li>
-        <li><a href="../tools/">Tools</a></li>
+        <li><a class="nav-tools" href="../tools/">Tools</a></li>
         <li><a href="../blog/">Blog</a></li>
         <li><a href="../about/">About</a></li>
         <li><a href="../faq/">FAQ</a></li>
         <li><a href="../contact/">Contact</a></li>
       </ul>
     </nav>
-    <a class="btn btn-sm header-cta" href="../contact/">Get Started</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Switch to light theme"><svg class="icon-moon" viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5 5l1.7 1.7M17.3 17.3 19 19M19 5l-1.7 1.7M6.7 17.3 5 19"/></svg></button>
   </div>
 </header>
 <main>
+<section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="https://jnbacklink.com/">Home</a> &nbsp;/&nbsp; <a href="https://jnbacklink.com/tools/">Tools</a> &nbsp;/&nbsp; <span>Smart Link Converter</span></p>
+      <h1>Smart Link <span class="grad-text">Converter</span></h1>
+      <p class="page-sub">Turn plain URLs in text into clickable HTML or Markdown links.</p>
+    </div>
+  </section>
 <section class="section">
 <div class="container">
 <div class="tool-box">
@@ -55,6 +115,14 @@
 <div class="tool-result"><label>Markdown links</label><div class="tool-output" id="smartMdOutput"></div>
 <div class="tool-controls"><button class="btn btn-outline btn-sm" id="copySmartMd" type="button">Copy Markdown</button></div></div>
 </div>
+<div class="mt-4">
+    <div class="card">
+      <h3>Need this done for you?</h3>
+      <p>High-quality backlinks that build authority and rankings — handled for you, with a full link report.</p>
+      <a class="btn btn-sm" href="../services/backlink-service/">See our Backlink Service &rarr;</a>
+    </div>
+  </div>
+
 <p class="mt-4"><a href="./">&larr; Back to All Tools</a></p>
 </div>
 </section>
@@ -62,34 +130,53 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div>
-        <h4>JN Backlink</h4>
-        <p>JN Backlink is a results-focused SEO and digital marketing agency. We help businesses rank higher on Google, reach the right audience on Facebook and Google Ads, and turn clicks into customers.</p>
+      <div class="footer-brand">
+        <a class="brand" href="../">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z" fill="#0B1220"/></svg></span>
+          <span class="brand-text">
+            <span class="brand-name">JN <span class="grad-text">BACKLINK</span></span><br>
+            <span class="brand-tag">SEO &amp; Digital Marketing</span>
+          </span>
+        </a>
+        <p>Premium SEO &amp; backlink building services to skyrocket your search rankings.</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="../services/seo/">SEO</a></li>
+          <li><a href="../services/facebook-ads/">Facebook Ads / Meta Ads</a></li>
+          <li><a href="../services/google-ads/">Google Ads</a></li>
+          <li><a href="../services/social-media-management/">Social Media Management</a></li>
+          <li><a href="../services/backlink-service/">Backlink Service</a></li>
+          <li><a href="../services/email-marketing/">Email Marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
         <ul>
           <li><a href="../">Home</a></li>
           <li><a href="../services/">Services</a></li>
           <li><a href="../tools/">Tools</a></li>
-          <li><a href="../blog/">Blog</a></li>
           <li><a href="../about/">About</a></li>
-          <li><a href="../faq/">FAQ</a></li>
           <li><a href="../contact/">Contact</a></li>
+          <li><a href="../privacy/">Privacy Policy</a></li>
+          <li><a href="../terms/">Terms of Service</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../faq/">FAQ</a></li>
         </ul>
       </div>
       <div>
         <h4>Contact</h4>
         <ul>
-          <li>Email: <a href="mailto:jnbacklink@gmail.com">jnbacklink@gmail.com</a></li>
-          <li>Phone: <a href="tel:01410677809">01410677809</a></li>
-          <li>Telegram: <a href="https://t.me/jnbacklinks" target="_blank" rel="noopener">@jnbacklinks</a></li>
+          <li><a href="mailto:jnbacklink@gmail.com">jnbacklink@gmail.com</a></li>
+          <li><a href="tel:01410677809">01410677809</a></li>
+          <li><a href="https://t.me/jnbacklinks" target="_blank" rel="noopener">@jnbacklinks</a></li>
         </ul>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="container">&copy; 2026 JN Backlink. All rights reserved.</div>
+    <div class="container">&copy; 2026 JN BACKLINK. All rights reserved.</div>
   </div>
 </footer>
 <script src="../assets/js/main.js"></script>
